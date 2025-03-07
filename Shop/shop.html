@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Basement - Drinks</title>
+</head>
+
+<body>
+<header>
+    <a href="index.html">
+        <img id="logo" src="images/logo.jpg" alt="Basement Logo">
+    </a>
+    <nav id="laptopMenu">
+        <a href="shop.html">Shop</a>
+        <a href="fun.html">Fun</a>
+        <a href="map.html">Map</a>
+    </nav>
+    <img id="burger" src="images/burger.png" alt="Burger Icon">
+    <nav id="hiddenMenu">
+        <a href="shop.html">Shop</a>
+        <a href="fun.html">Fun</a>
+        <a href="map.html">Map</a>
+    </nav>
+</header>
+
+<main id="shop">
+
+    <h1>Drinks</h1>
+    <div id="shopwrapper">
+        <section>
+            <div id="drink_farverig" data-pris="69" data-navn="Magic Sundown">
+                <img src="images/products/drinkfarverig.jpg" alt="Farverig drink">
+                <h1>Magic Sundown</h1>
+                <p>69 kr.</p>
+                <p>Lige så luftig og frisk som sin farve. Starter med frisk sød smag og skifter over til en fyldig smag af friske jordbær. </p>
+                <input type="button" id="tilfoejKurv" value="Føj til kurv">
+            </div>
+
+            <div id="drink_gul">
+                <img src="images/products/drinkgul.jpg" alt="Gul Drink">
+                <h1>Pineapple Dream</h1>
+                <p>99 kr.</p>
+                <p>En cremet drink med fløde, ananas og kokos</p>
+                <input type="button" id="tilfoejKurv" value="Føj til kurv">
+            </div>
+
+            <div id="drink_campari">
+                <img src="images/products/toglas.jpg" alt="Drinks i to glas">
+                <h1>Campari</h1>
+                <p>89 kr.</p>
+                <p>Nyd den klassiske Campari i Basement. Skænket med ynde og omtanke.</p>
+                <input type="button" id="tilfoejKurv" value="Føj til kurv">
+            </div>
+        </section>
+        <aside>
+            <h2>Shopping Cart</h2>
+            <ul>
+                ...
+            </ul>
+            <p id="totalPris"></p>
+        </aside>
+    </div>
+</main>
+</body>
+</html>

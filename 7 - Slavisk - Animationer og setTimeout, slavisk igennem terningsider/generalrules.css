@@ -1,0 +1,27 @@
+        /* GENERELLE REGLER UDEN DEN STORE MAGI: */
+        body{
+            text-align:center;
+        }
+
+        button{
+            width:20%;
+            height:50px;
+            border-radius:20px;
+            font-size:18px;
+            margin:30px;
+        }
+
+        /* MAGI!: */
+        div{
+            width:30%;
+            margin:auto;
+
+            animation-duration:0.5s;
+            animation-fill-mode: forwards;
+            /* Animation name gør JS */
+        }
+
+        div img{
+            width:100%;
+            display:block; /* SVGen opfører sig ikke som blok*/
+        }

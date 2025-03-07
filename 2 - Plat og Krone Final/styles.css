@@ -1,0 +1,49 @@
+body{
+    text-align:center; /* Så kommer min paragraph ind i midten også. */
+    padding-top:50px; /* Det hele får lidt white space i toppen. */
+}
+
+div#platOgKroneContainer{
+    width:100%;
+    text-align:center;
+}
+
+button{
+    padding-right:10px;
+    padding-left:10px;
+}
+
+img{
+    margin-left:auto; /* For at centrere billederne i body på en nem måde. */
+    margin-right:auto;
+    width: 20%;
+}
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30pt;
+}
+
+#plat, #krone{ /* Kronens sider: Se animationer herunder (a.k.a. @keyframes) */
+    display:none;
+
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+    /*animation-name:rotateCoin;*/
+}
+
+#plat{
+    display:block;
+}
+
+/* Animationer som mønterne bruger: */
+@keyframes rotateCoin{
+    from{transform:rotateY(-90deg)}
+    to{transform:rotateY(90deg)}
+}
+
+@keyframes showResult{
+    from{transform:rotateY(-90deg)}
+    to{transform:rotateY(0deg)}
+}

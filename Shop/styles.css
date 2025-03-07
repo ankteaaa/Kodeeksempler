@@ -1,0 +1,112 @@
+/* GENERELLE REGLER: */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#0d002e;
+    
+    /* Fonts: */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+   
+    text-align:center;
+}
+
+h1, h2, h3, a{
+    text-transform:uppercase;
+}
+h1{
+    width:100%;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#logo{
+    width:30%;
+}
+
+nav a, nav a:visited{
+    font-size:18pt;
+    text-decoration:none;
+    color:white;
+}
+
+/* DRINKS/PRODUKTER/SHOP: */
+/*Shopwrapper: Indeholder produkter og cart: */
+main#shop #shopwrapper{
+    display:flex;
+}
+
+/* Produkterne til venstre: */
+main#shop section{
+    width:70%;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+main#shop section div{
+    width:40%;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+main#shop section div img{
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+/* Shopping cart til højre: */
+main#shop aside{
+    width:30%;
+    height:500px;
+}
+
+main#shop aside ul{
+    list-style-type:none;
+}
+
+/*
+.produktheading{
+
+}
+*/
+
+/* BURGERMENU: */
+#laptopMenu{
+    display:flex;
+    justify-content:space-around;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#burger{
+    width:10%;
+    position:fixed;
+    top:0px;
+    right:0px;
+}
+
+#hiddenMenu{
+    height:200px;
+    width:300px;
+    background-color:rgba(0,0,0, 0.5);
+    position:fixed;
+    right:0px;
+    top:120px;
+    /*display:none;*/
+    opacity:0;
+    transition: opacity 1s;
+}
+#hiddenMenu a{
+    display:block;
+}

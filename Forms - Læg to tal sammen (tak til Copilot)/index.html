@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additioneringsformular</title>
+    <script>
+        function addNumbers() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var sum = num1 + num2;
+            document.getElementById('result').innerText = 'Sum: ' + sum;
+        }
+    </script>
+</head>
+<body>
+    <h1>Tilføj to tal</h1>
+    <!-- preventDefault gør, at brugeren ikke kan trykke 'send' før at det er fyldt rigtigt ud. -->
+    <form onsubmit="event.preventDefault(); addNumbers();">
+        <label for="num1">Tal 1:</label>
+        <!-- 'required': Feltet kan ikke stå tomt -->
+        <input type="number" id="num1" required><br><br>
+        <label for="num2">Tal 2:</label>
+        <input type="number" id="num2" required><br><br>
+        <button type="submit">Læg sammen</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
